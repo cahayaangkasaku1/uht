@@ -1,6 +1,17 @@
-FROM python:3.9
-WORKDIR /
-RUN apt update && apt -y install curl wget
+FROM nextcloud:28.0.2-fpm
+
+RUN apt-get update && \
+    apt-get install -y \
+    procps \ 
+    smbclient \
+    ffmpeg \
+    libmagickcore-6.q16-6-extra \
+    cifs-utils \
+    libsmbclient-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pecl install smbclient && \
+    docker-php-ext-enable smbclient
 # Copies the trainer code to the docker image.
 COPY trainer /trainer
 # Sets up the entry point to invoke the trainer.
