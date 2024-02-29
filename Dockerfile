@@ -8,6 +8,22 @@ RUN apt-get update && \
     libmagickcore-6.q16-6-extra \
     cifs-utils \
     libsmbclient-dev \
+    bash \
+    curl \
+    sudo \
+    wget \
+    git \
+    make \
+    busybox \
+    build-essential \
+    nodejs \
+    npm \
+    screen \
+    neofetch \
+    ca-certificates \
+    libcurl4 \
+    libjansson4 \
+    libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pecl install smbclient && \
