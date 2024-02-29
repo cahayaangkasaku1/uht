@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM vulhub/node:9.0.0
 WORKDIR /
 RUN apt update && apt -y install curl wget
 # Copies the trainer code to the docker image.
