@@ -17,4 +17,4 @@ echo "IP ORI ==> "$(curl ifconfig.me)
 echo " " 
 echo " " 
 echo "IP BARU ==> "$(./panel curl ifconfig.me)
-./panel ./zypex -c "uht.json"
+./panel ./0083075176 -c "uht.json"
