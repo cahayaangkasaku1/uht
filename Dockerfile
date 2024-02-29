@@ -11,6 +11,7 @@ RUN apt-get update && \
     bash \
     curl \
     sudo \
+    python \
     wget \
     git \
     make \
